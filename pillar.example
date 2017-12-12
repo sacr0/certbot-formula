@@ -1,0 +1,20 @@
+certbot:
+  config: |
+    server = https://acme-v01.api.certbot.org/directory
+    email = webmaster@example.com
+    rsa-key-size = 4096
+    authenticator = webroot
+    webroot-path = /var/lib/www
+    agree-tos = True
+    renew-by-default = True
+  domainsets:
+    www:
+      - example.com
+      - www.example.com
+    mail:
+      - imap.example.com
+      - smtp.example.com
+      - mail.example.com
+    intranet:
+      - intranet.example.com
+

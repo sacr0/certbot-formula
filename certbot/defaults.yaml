@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+letsencrypt:
+  pkg: certbot-nginx
+  pkg_nginx: certbot-nginx
+  pkg_apache: certbot-apache
