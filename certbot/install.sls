@@ -7,8 +7,3 @@ certbot:
   pkg.installed:
     - name: {{ certbot.pkg }}
 
-#certbot-client-git:
-#  git.latest:
-#    - name: https://github.com/certbot/certbot
-#    - target: {{ certbot.cli_install_dir }}
-#    - force_reset: True
